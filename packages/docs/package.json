@@ -1,0 +1,43 @@
+{
+  "name": "@gnakassima-ignite-ui/docs",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "storybook dev -p 6006",
+    "build": "storybook build",
+    "build-vite": "tsc -b && vite build",
+    "deploy-storybook": "storybook-to-ghpages"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@gnakassima-ignite-ui/eslint-config": "*",
+    "@gnakassima-ignite-ui/react": "*",
+    "@gnakassima-ignite-ui/tokens": "*",
+    "@storybook/addon-a11y": "^8.1.11",
+    "phosphor-react": "^1.4.1",
+    "polished": "^4.3.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.5.0",
+    "@storybook/addon-docs": "^8.1.10",
+    "@storybook/addon-essentials": "^8.1.10",
+    "@storybook/addon-interactions": "^8.1.10",
+    "@storybook/addon-links": "^8.1.10",
+    "@storybook/addon-onboarding": "^8.1.10",
+    "@storybook/blocks": "^8.1.10",
+    "@storybook/react": "^8.1.10",
+    "@storybook/react-vite": "^8.1.10",
+    "@storybook/storybook-deployer": "^2.8.16",
+    "@storybook/test": "^8.1.10",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "storybook": "^8.1.10",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1"
+  }
+}

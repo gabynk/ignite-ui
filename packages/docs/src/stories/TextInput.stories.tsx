@@ -1,10 +1,23 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Box, Text, TextInput, TextInputProps } from '@gnakassima-ignite-ui/react'
+import {
+  Box,
+  Text,
+  TextInput,
+  TextInputProps,
+} from '@gnakassima-ignite-ui/react'
 
 export default {
   title: 'Form/Text Input',
   component: TextInput,
   args: {},
+  argTypes: {
+    size: {
+      options: ['sm', 'md'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+  },
   decorators: [
     (Story) => {
       return (
@@ -35,5 +48,13 @@ export const Disabled: StoryObj<TextInputProps> = {
 export const WithPrefix: StoryObj<TextInputProps> = {
   args: {
     prefix: 'cal.com/',
+    placeholder: 'your-username',
+  },
+}
+
+export const Small: StoryObj<TextInputProps> = {
+  args: {
+    size: 'sm',
+    placeholder: 'email address',
   },
 }
